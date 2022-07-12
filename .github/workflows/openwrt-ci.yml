@@ -57,10 +57,10 @@ jobs:
           # ln -s /mnt/openwrt/staging_dir ./staging_dir
 
           df -h
+
       - name: Add Packages
         run: |
           cd package
-          rm openwrt-packages
           git clone https://github.com/liuran001/openwrt-packages
 
       - name: Update feeds
